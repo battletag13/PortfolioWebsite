@@ -1,0 +1,43 @@
+.half-page-space-section {
+    height: 20rem;
+}
+.large-space-section {
+    height: 7rem;
+}
+.row {
+    margin-bottom: 0px;
+}
+.space-section {
+    height: 3rem;
+}
+.selected {
+    background-color: rgba(201, 201, 201, .6)
+}
+.xlarge-space-section {
+    height: 12rem;
+}
+
+html {
+    font-weight: 200;
+}
+h4 {
+    font-weight: 200;
+}
+h5 {
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/* Mobile changes (Reactive) */
+@media screen and (max-width: 670px) {
+    h4 {
+        font-size: 1.12rem ! important;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
