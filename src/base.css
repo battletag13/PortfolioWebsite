@@ -7,7 +7,7 @@
 .row {
     margin-bottom: 0px;
 }
-.space-section {
+.small-space-section {
     height: 3rem;
 }
 .selected {
@@ -17,13 +17,6 @@
     height: 12rem;
 }
 
-/* .test {
-    margin: auto;
-    width: 20rem;
-    position: relative;
-    bottom: 20rem;
-} */
-
 html {
     font-weight: 200;
 }
@@ -32,6 +25,7 @@ h4 {
 }
 h5 {
     font-weight: 100;
+    font-size: 1.8rem ! important;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
