@@ -1,6 +1,9 @@
 .half-page-space-section {
     height: 20rem;
 }
+.white-link {
+    color: white;
+}
 .large-space-section {
     height: 7rem;
 }
@@ -26,11 +29,19 @@ h4 {
 h5 {
     font-weight: 100;
     font-size: 1.8rem ! important;
+    margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p {
     font-size: 1.2rem;
     font-weight: 100;
+}
+
+/* For FontAwesome icons */
+.circle-icon {
+    /* background: #ffc0c0; */
+    padding:30px;
+    border-radius: 50%;
 }
 
 /* Mobile changes (Reactive) */
