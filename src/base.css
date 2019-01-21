@@ -19,6 +19,9 @@
 .selected {
     background-color: rgba(201, 201, 201, .6)
 }
+.thick {
+    font-weight: 300;
+}
 .xlarge-space-section {
     height: 12rem;
 }
