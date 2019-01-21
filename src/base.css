@@ -40,6 +40,10 @@ p {
     font-weight: 100;
 }
 
+a.disabled {
+    pointer-events: none !important;
+}
+
 /* For FontAwesome icons */
 .circle-icon {
     /* background: #ffc0c0; */
