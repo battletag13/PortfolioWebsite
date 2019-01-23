@@ -84,8 +84,8 @@
     <section class="large-space-section"></section>
 
     <!-- Project section -->
-    <section id="portfolio portfolio-section" class="scrollspy">
-        <div class="center">
+    <section id="portfolio">
+        <div id="portfolio-section" class="center scrollspy">
             <h5>Some things I have been working on</h5>
             <section class="large-space-section"></section>
         </div>
@@ -287,7 +287,9 @@
     $(document).ready(function() {
         $('.tabs').tabs();
         $('.sidenav').sidenav();
-        $('.scrollspy').scrollSpy();
+        $('.scrollspy').scrollSpy({
+            scrollOffset: 30
+        });
     });
   </script>
 </body>
