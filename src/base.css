@@ -26,8 +26,14 @@
 .thick {
     font-weight: 300;
 }
+.tiny-space-section {
+    height: 1rem;
+}
 .xlarge-space-section {
     height: 12rem;
+}
+.xxlarge-space-section {
+    height: 16rem;
 }
 
 html {
