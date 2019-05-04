@@ -3,6 +3,7 @@
 }
 .white-link {
     color: white;
+    text-decoration: underline;
 }
 .large-space-section {
     height: 7rem;
