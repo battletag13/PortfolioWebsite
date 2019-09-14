@@ -19,6 +19,10 @@ const portfolioTitle = `Some things I have been working on`;
 //Work experience section
 const workExperienceTitle = `My current work experience`;
 
+// Show the portfolio title after the greeting title,
+// unless the 'To Portfolio' button is clicked
+let portfolioTitleShown = false;
+
 // Top level typewriter effect
 new TypeIt('#brand-logo', {
   speed: 30,
@@ -70,14 +74,28 @@ new TypeIt('#motto', {
     $('#motto-description').addClass('animated').addClass('fadeIn');
     // Delete the placeholder
     $('#placeholder-motto-description').remove();
+
+    if (!portfolioTitleShown) {
+      portfolioTitleShown = true;
+      new TypeIt('#portfolio-title', {
+        speed: 30,
+        strings: portfolioTitle,
+        waitUntilVisible: true,
+      }).go();
+    }
   }
 }).go();
 
-new TypeIt('#portfolio-title', {
-  speed: 30,
-  strings: portfolioTitle,
-  waitUntilVisible: true,
-}).go();
+$('#portfolio-button').click(() => {
+  if (!portfolioTitleShown) {
+    portfolioTitleShown = true;
+    new TypeIt('#portfolio-title', {
+      speed: 30,
+      strings: portfolioTitle,
+      waitUntilVisible: true,
+    }).go();
+  }
+});
 
 new TypeIt('#work-experience-title', {
   speed: 30,
