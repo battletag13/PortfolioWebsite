@@ -99,6 +99,8 @@
         as I wouldn't be here without the vast amount of free learning resources that I have utilized over my years coding.
       </p>
       <section class="small-space-section blue lighten-1"></section>
+      <p id="friends" class="flow-text"></p>
+      <section class="small-space-section blue lighten-1"></section>
       <h5>Work Experience</h5>
       <p class="flow-text">
         <a href="" class="white-link">Robolink 2019 Summer Internship</a>
@@ -181,6 +183,14 @@
       afterComplete: (instance) => {
         $('#placeholder').remove();
         $('.hide').removeClass('hide').addClass('animated').addClass('fadeIn');
+        new TypeIt('#friends', {
+          speed: 30,
+          strings: `And yes... I have friends. In my free time I enjoy going out with
+          friends and I also occasionally play some video games with them as well.
+          I also love staying healthy through running which is why I am an active
+          member of my school's Track&Field team!`,
+          waitUntilVisible: true,
+        }).go();
       }
     }).go();
   </script>
