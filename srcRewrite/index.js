@@ -50,7 +50,7 @@ new TypeIt('#brand-logo', {
 
         // After the title is typed, begin typing the description
         new TypeIt('#personal-description', {
-          speed: 25,
+          speed: 12,
           strings: personalDescription,
           waitUntilVisible: true,
 
