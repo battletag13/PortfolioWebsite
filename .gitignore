@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/web,linux,macos,windows
-# Edit at https://www.gitignore.io/?templates=web,linux,macos,windows
+# Created by https://www.gitignore.io/api/linux,macos,windows
+# Edit at https://www.gitignore.io/?templates=linux,macos,windows
 
 ### Linux ###
 *~
@@ -45,19 +45,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.xhtml
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -84,4 +71,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/web,linux,macos,windows
+# End of https://www.gitignore.io/api/linux,macos,windows
