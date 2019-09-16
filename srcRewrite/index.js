@@ -9,9 +9,9 @@ $(document).ready(function() {
 
 // Header
 const brandTitle = `Matthew Lin`;
-const personalTitle = `Full-Stack Web + (Desktop) Application Developer`;
+const personalTitle = `Full-Stack Software Developer`;
 const personalDescription = `I create high quality web applications, games,
-  and projects`;
+  and software`;
 // Motto section
 const motto = `Lots already learned. <u>Lots</u> to learn.`;
 //Project section
