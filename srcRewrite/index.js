@@ -56,6 +56,7 @@ new TypeIt('#brand-logo', {
 
           afterComplete: () => {
             $('#portfolio-button').removeClass('hide');
+            $('#resume-button').removeClass('hide');
             $('#hero-img').removeClass('hide');
             $('#portfolio-placeholder').remove();
           }
