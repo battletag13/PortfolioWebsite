@@ -37,6 +37,7 @@ a.disabled {
 
 /* Misc */
 .full-height {
+  position: relative;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }

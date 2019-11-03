@@ -80,8 +80,9 @@ new TypeIt('#motto', {
               speed: 30,
               strings: portfolioTitle,
             }).go();
+          else document.querySelector('#portfolio-title').innerHTML('');
         },
-        { threshold: [ 1 ] },
+        { threshold: [ 0.01 ] },
       ).observe(document.querySelector('#portfolio-title'));
     }
   },
@@ -99,8 +100,9 @@ $('#portfolio-button').click(() => {
             speed: 30,
             strings: portfolioTitle,
           }).go();
+        else document.querySelector('#portfolio-title').innerHTML('');
       },
-      { threshold: [ 1 ] },
+      { threshold: [ 0.01 ] },
     ).observe(document.querySelector('#portfolio-title'));
   }
 });
