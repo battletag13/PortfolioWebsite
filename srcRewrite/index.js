@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.tabs').tabs();
   $('.sidenav').sidenav();
   $('.scrollspy').scrollSpy({
-      scrollOffset: 30
+    scrollOffset: 30,
   });
 });
 
@@ -27,12 +27,15 @@ let portfolioTitleShown = false;
 new TypeIt('#brand-logo', {
   speed: 30,
   cursor: false,
-  strings: "Matthew Lin",
+  strings: 'Matthew Lin',
   waitUntilVisible: true,
 
   afterComplete: () => {
     // Delete the first placeholder
     $('#placeholder-personal-title').remove();
+
+    // Remove the color padding
+    $('#placeholder-padding').remove();
 
     // After the name is typed, begin typing the title
     new TypeIt('#personal-title', {
@@ -59,9 +62,9 @@ new TypeIt('#brand-logo', {
             $('#resume-button').removeClass('hide');
             $('#hero-img').removeClass('hide');
             $('#portfolio-placeholder').remove();
-          }
+          },
         }).go();
-      }
+      },
     }).go();
   },
 }).go();
@@ -86,7 +89,7 @@ new TypeIt('#motto', {
         waitUntilVisible: true,
       }).go();
     }
-  }
+  },
 }).go();
 
 $('#portfolio-button').click(() => {
