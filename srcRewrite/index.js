@@ -31,12 +31,6 @@ new TypeIt('#brand-logo', {
   waitUntilVisible: true,
 
   afterComplete: () => {
-    // Delete the first placeholder
-    $('#placeholder-personal-title').remove();
-
-    // Remove the color padding
-    $('#placeholder-padding').remove();
-
     // After the name is typed, begin typing the title
     new TypeIt('#personal-title', {
       speed: 30,
@@ -44,9 +38,6 @@ new TypeIt('#brand-logo', {
       waitUntilVisible: true,
 
       afterComplete: (instance) => {
-        // Delete the second placeholder
-        $('#placeholder-personal-description').remove();
-
         // Get rid of the cursor for the personal title
         instance.reset();
         $('#personal-title').html(personalTitle);
@@ -61,7 +52,6 @@ new TypeIt('#brand-logo', {
             $('#portfolio-button').removeClass('hide');
             $('#resume-button').removeClass('hide');
             $('#hero-img').removeClass('hide');
-            $('#portfolio-placeholder').remove();
           },
         }).go();
       },
@@ -78,8 +68,6 @@ new TypeIt('#motto', {
   afterComplete: () => {
     $('#motto-description').removeClass('hide');
     $('#motto-description').addClass('animated').addClass('fadeIn');
-    // Delete the placeholder
-    $('#placeholder-motto-description').remove();
 
     if (!portfolioTitleShown) {
       portfolioTitleShown = true;

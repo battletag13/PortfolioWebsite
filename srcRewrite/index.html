@@ -33,79 +33,70 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="nav-wraper blue lighten-1 nav">
-      <div class="container">
-        <a href="index" id="brand-logo" class="brand-logo left"></a>
-        <!-- Mobile sidenav trigger icon -->
-        <a href="#" class="sidenav-trigger right"
-          data-target="mobile-links">
-          <i class="material-icons">menu</i>
-        </a>
+  <!-- Makes blue area take up 100% of viewport -->
+  <section class="blue lighten-1" style="height: 100vh">
+    <!-- Navbar -->
+    <header>
+      <nav class="nav-wraper blue lighten-1 nav z-depth-0">
+        <div class="container">
+          <a href="index" id="brand-logo" class="brand-logo left"></a>
+          <!-- Mobile sidenav trigger icon -->
+          <a href="#" class="sidenav-trigger right"
+            data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
 
-        <!-- Navbar for large and xlarge screens -->
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="pages/about"
-              class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">About</a>
-          </li>
-          <li class="blue">
-            <a href="index"
-              class="waves-effect waves-light btn-large blue z-depth-0">Portfolio</a>
-          </li>
-          <li>
-            <a href="pages/testimonials"
-              class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">Testimonials</a>
-          </li>
-          <li>
-            <a href="pages/contact"
-              class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Mobile Navbar (Reactive) -->
-    <ul id="mobile-links" class="sidenav">
-      <li>
-        <a href="pages/about" class="waves-effect waves-light">About</a>
-      </li>
-      <li class="active">
-        <a href="index" class="waves-effect waves-light">Portfolio</a>
-      </li>
-      <li>
-        <a href="pages/testimonials"
-          class="waves-effect waves-light">Testimonials</a>
-      </li>
-      <li>
-        <a href="pages/contact"
-          class="waves-effect waves-light">Contact</a>
-      </li>
-    </ul>
-  </header>
+          <!-- Navbar for large and xlarge screens -->
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="pages/about"
+                class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">About</a>
+            </li>
+            <li class="blue">
+              <a href="index"
+                class="waves-effect waves-light btn-large blue z-depth-0">Portfolio</a>
+            </li>
+            <li>
+              <a href="pages/testimonials"
+                class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">Testimonials</a>
+            </li>
+            <li>
+              <a href="pages/contact"
+                class="waves-effect waves-light btn-large blue lighten-1 z-depth-0">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Navbar (Reactive) -->
+      <ul id="mobile-links" class="sidenav">
+        <li>
+          <a href="pages/about" class="waves-effect waves-light">About</a>
+        </li>
+        <li class="active">
+          <a href="index" class="waves-effect waves-light">Portfolio</a>
+        </li>
+        <li>
+          <a href="pages/testimonials"
+            class="waves-effect waves-light">Testimonials</a>
+        </li>
+        <li>
+          <a href="pages/contact"
+            class="waves-effect waves-light">Contact</a>
+        </li>
+      </ul>
+    </header>
 
-  <!-- Space sections just add extra space of a certain color to the webpage -->
-  <section class="large-space-section blue lighten-1"></section>
-  <section class="tiny-space-section blue lighten-1"></section>
-  <section class="tiny-space-section blue lighten-1"></section>
-
-  <!-- Front section -->
-  <section>
-    <div class="row center blue lighten-1 white-text">
+    <!-- Front section -->
+    <div class="row center white-text">
       <div class="col s12">
-        <!-- Using thin spaces to work as placeholders -->
-        <section id="placeholder-padding" class="large-space-section">
+        <!-- Spacing after navbar -->
+        <section class="large-space-section">
         </section>
 
-        <h4 id="placeholder-personal-title"></h4>
+        <!-- Will be filled in with typeit.js -->
         <h4 id="personal-title"></h4>
-
-        <p id="placeholder-personal-description"></p>
         <p id="personal-description"></p>
-        <div id="portfolio-placeholder">
-          <section class="half-page-space-section"></section>
-          <section class="large-space-section"></section>
-        </div>
+
         <!-- Buttons -->
         <div class="row center">
           <a href="#portfolio-section" id="portfolio-button"
@@ -119,7 +110,7 @@
     </div>
     <section class="large-space-section blue lighten-1"></section>
 
-    <div class="row">
+    <div class="row" style="bottom: 0; position: absolute">
       <div class="col s12 blue lighten-1 center">
         <img src="images/hero.png" id="hero-img"
           class="animated fadeIn hide"
@@ -128,46 +119,41 @@
     </div>
   </section>
 
-  <section class="xlarge-space-section"></section>
+  <section style="height: 100vh">
 
-  <!-- Greeting section -->
-  <section>
-    <div class="row center">
-      <div class="container">
-        <div class="col s12">
-          <h5 id="motto"></h5>
-          <section class="tiny-space-section"></section>
-          <p id="placeholder-motto-description">
-            <br /><br /><br /><br /><br /><br />
-          </p>
-          <p id="motto-description" class="hide">
-            Since beginning my journey as a budding programmer almost four
-            years ago, I've explored a wide range of computer science
-            related
-            fields, studied a few of them, and worked on various personal
-            and
-            freelance programming projects. In addition to theoretical and
-            some personal practical knowledge, I also (currently) have one
-            summer of professional work experience as a software engineer.
-            <br />
-            <br />
-            I work every day towards improving my abilities and gaining
-            more
-            experiences and expertise!
-          </p>
+    <section class="xlarge-space-section"></section>
+    <!-- Greeting section -->
+    <section>
+      <div class="row center">
+        <div class="container">
+          <div class="col s12">
+            <h5 id="motto"></h5>
+            <section class="tiny-space-section"></section>
+            <p id="motto-description" class="hide">
+              Since beginning my journey as a budding programmer almost
+              four years ago, I've explored a wide range of computer
+              science related fields, studied a few of them, and worked on
+              various personal and freelance programming projects. In
+              addition to theoretical and some personal practical
+              knowledge, I also (currently) have one summer of professional
+              work experience as a software engineer. <br /> <br /> I work
+              every day towards improving my abilities and gaining more
+              experiences and expertise!
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="large-space-section"></section>
-
-  <!-- Project section -->
-  <section id="portfolio">
+    </section>
+    <!-- Spacing between the end of the motto and the start of portfolio -->
+    <section class="large-space-section"></section>
     <div id="portfolio-section" class="center scrollspy">
       <h5 id="portfolio-title"></h5>
       <section class="large-space-section"></section>
     </div>
+  </section>
+
+  <!-- Project section -->
+  <section id="portfolio">
     <div class="row">
       <!-- Project -->
       <div class="col s12 l4 offset-l2">
