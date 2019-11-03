@@ -36,6 +36,10 @@ a.disabled {
 }
 
 /* Misc */
+.full-height {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
 .row {
   margin-bottom: 0px;
 }
