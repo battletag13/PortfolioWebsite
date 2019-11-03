@@ -71,11 +71,18 @@ new TypeIt('#motto', {
 
     if (!portfolioTitleShown) {
       portfolioTitleShown = true;
-      new TypeIt('#portfolio-title', {
-        speed: 30,
-        strings: portfolioTitle,
-        waitUntilVisible: true,
-      }).go();
+      // Since typeit seems to have a bug, we must use a IntersectionObserver
+      // to check if the text is supposed to be in view
+      new IntersectionObserver(
+        function(entries) {
+          if (entries[0].isIntersecting === true)
+            new TypeIt('#portfolio-title', {
+              speed: 30,
+              strings: portfolioTitle,
+            }).go();
+        },
+        { threshold: [ 1 ] },
+      ).observe(document.querySelector('#portfolio-title'));
     }
   },
 }).go();
@@ -83,19 +90,20 @@ new TypeIt('#motto', {
 $('#portfolio-button').click(() => {
   if (!portfolioTitleShown) {
     portfolioTitleShown = true;
-    new TypeIt('#portfolio-title', {
-      speed: 30,
-      strings: portfolioTitle,
-      waitUntilVisible: true,
-    }).go();
+    // Since typeit seems to have a bug, we must use a IntersectionObserver
+    // to check if the text is supposed to be in view
+    new IntersectionObserver(
+      function(entries) {
+        if (entries[0].isIntersecting === true)
+          new TypeIt('#portfolio-title', {
+            speed: 30,
+            strings: portfolioTitle,
+          }).go();
+      },
+      { threshold: [ 1 ] },
+    ).observe(document.querySelector('#portfolio-title'));
   }
 });
-
-new TypeIt('#work-experience-title', {
-  speed: 30,
-  strings: workExperienceTitle,
-  waitUntilVisible: true,
-}).go();
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -108,3 +116,16 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+// Since typeit seems to have a bug, we must use a IntersectionObserver
+// to check if the text is supposed to be in view
+new IntersectionObserver(
+  function(entries) {
+    if (entries[0].isIntersecting === true)
+      new TypeIt('#work-experience-title', {
+        speed: 30,
+        strings: workExperienceTitle,
+      }).go();
+  },
+  { threshold: [ 1 ] },
+).observe(document.querySelector('#work-experience-title'));
