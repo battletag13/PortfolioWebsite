@@ -128,6 +128,7 @@ new IntersectionObserver(
         speed: 30,
         strings: workExperienceTitle,
       }).go();
+    else document.querySelector('#work-experience-title').innerHTML('');
   },
-  { threshold: [ 1 ] },
+  { threshold: [ 0.01 ] },
 ).observe(document.querySelector('#work-experience-title'));
