@@ -107,6 +107,14 @@ p {
   }
 }
 
+/* Mobile changes (Reactive Landscape) */
+@media screen and (max-height: 500px) {
+  .double-height-on-mobile-landscape {
+    height: 200vh !important;
+    height: calc(var(--vh, 1vh) * 200) !important;
+  }
+}
+
 /* Mobile changes (Reactive Medium) */
 @media screen and (max-width: 1024px) and (min-width: 568px) {
   h4 {

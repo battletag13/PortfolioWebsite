@@ -80,7 +80,7 @@ new TypeIt('#motto', {
               speed: 30,
               strings: portfolioTitle,
             }).go();
-          else document.querySelector('#portfolio-title').innerHTML('');
+          else document.querySelector('#portfolio-title').innerHTML = '';
         },
         { threshold: [ 0.01 ] },
       ).observe(document.querySelector('#portfolio-title'));
@@ -128,7 +128,7 @@ new IntersectionObserver(
         speed: 30,
         strings: workExperienceTitle,
       }).go();
-    else document.querySelector('#work-experience-title').innerHTML('');
+    else document.querySelector('#work-experience-title').innerHTML = '';
   },
   { threshold: [ 0.01 ] },
 ).observe(document.querySelector('#work-experience-title'));
