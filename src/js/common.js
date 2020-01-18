@@ -29,6 +29,6 @@ $(document).ready(function() {
   $('.tabs').tabs();
   $('.sidenav').sidenav();
   $('.scrollspy').scrollSpy({
-    scrollOffset: 100,
+    scrollOffset: 150,
   });
 });

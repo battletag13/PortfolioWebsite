@@ -94,7 +94,7 @@ $('#portfolio-button').click(() => {
             speed: typeitSpeed,
             strings: portfolioTitle,
           }).go();
-        else document.querySelector('#portfolio-title').innerHTML('');
+        else document.querySelector('#portfolio-title').innerHTML = '';
       },
       { threshold: [ 0.01 ] },
     ).observe(document.querySelector('#portfolio-title'));
