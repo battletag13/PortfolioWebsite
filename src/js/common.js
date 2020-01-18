@@ -6,8 +6,10 @@ document.onscroll = () => {
 
   if (scrollTop > 0 && atTop) {
     $('.depth').removeClass('hide');
+    $('.depth').removeClass('z-depth-0');
     $('.depth').removeClass('fadeOut');
     $('.depth').removeClass('very-fast');
+    $('.depth').addClass('z-depth-1');
     $('.depth').addClass('fadeIn');
     $('.depth').addClass('faster');
   }
