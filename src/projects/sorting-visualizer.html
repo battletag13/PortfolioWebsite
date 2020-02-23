@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+      />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script defer
+      src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+      integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/materialize.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+
+    <!-- Load the typeit script on the page. -->
+    <script src="../js/typeit.min.js"></script>
+    <title>Sorting Visualizer</title>
+  </head>
+
+  <body class="min-full-height">
+    <!-- Makes blue area take up 100% of viewport -->
+    <section class="blue lighten-1 min-full-height">
+      <!-- Navbar -->
+      <header>
+        <div class="navbar-fixed">
+          <nav class="nav-wraper blue lighten-1 nav z-depth-0">
+            <div class="z-depth-1 animated depth hide"></div>
+            <div class="container">
+              <a href="../index" class="brand-logo left
+                hide-on-med-and-down">Matthew
+                Lin</a>
+              <a href="../index" class="brand-logo hide-on-large-only">Matthew
+                Lin</a>
+              <!-- Mobile sidenav trigger icon -->
+              <a href="#" class="sidenav-trigger left"
+                data-target="mobile-links">
+                <i class="material-icons">menu</i>
+              </a>
+
+              <!-- Navbar for large and xlarge screens -->
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="../about"
+                    class="waves-effect waves-light btn-large blue
+                    lighten-1 z-depth-0">About</a>
+                </li>
+                <li>
+                  <a href="../index"
+                    class="waves-effect waves-light btn-large blue
+                    lighten-1 z-depth-0">Portfolio</a>
+                </li>
+                <li>
+                  <a href="../testimonials"
+                    class="waves-effect waves-light btn-large blue
+                    lighten-1 z-depth-0">Testimonials</a>
+                </li>
+                <li>
+                  <a href="../contact"
+                    class="waves-effect waves-light btn-large blue
+                    lighten-1 z-depth-0">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Mobile navbar -->
+        <ul id="mobile-links" class="sidenav">
+          <li>
+            <a href="../about" class="waves-effect waves-light">About</a>
+          </li>
+          <li>
+            <a href="../index" class="waves-effect waves-light">Portfolio</a>
+          </li>
+          <li>
+            <a href="../testimonials"
+              class="waves-effect waves-light">Testimonials</a>
+          </li>
+          <li>
+            <a href="../contact"
+              class="waves-effect waves-light">Contact</a>
+          </li>
+        </ul>
+      </header>
+
+      <section id="page">
+        <!-- Front section -->
+        <div class="row center white-text">
+          <div class="col s12">
+            <!-- Spacing after navbar -->
+            <section class="large-space-section hide-on-med-and-down">
+            </section>
+
+            <h4 id="title">About Sorting Visualizer</h4>
+            <p class="flow-text"><em>Please note, this project is still in
+                development</em></p>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col s6 offset-s3 blue lighten-1 center">
+          <img class="scale-image" src="../res/sorting-visualizer.png">
+        </div>
+        <section class="medium-space-section"></section>
+        <p class="col s12 m8 offset-m2 center white-text flow-text">
+          A sorting visualization tool written using P5.JS which allows
+          you to visualize and learn about some of the most common
+          sorting algorithms such as Bubble Sort, Quick Sort, Insertion
+          Sort, Merge Sort, etc. It can be found <a class="white-link
+            thick" target="_blank"
+            href="https://battletag13.github.io/SortingVisualizer/">here</a>.
+        </p>
+      </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer blue darken-1">
+      <div class="container row">
+        <div class="col l4 s12">
+          <h4>Contact:</h4>
+
+
+          <!-- Social media icons -->
+          <a href="https://www.instagram.com/matthew.plusprogramming/"
+            class="hide-on-med-and-down white-link" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x" style="color: red"></i>
+              <i class="fab fa-instagram fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a href="instagram://user?username=matthew.plusprogramming"
+            class="hide-on-large-only white-link" target="_blank">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x" style="color: red"></i>
+              <i class="fab fa-instagram fa-stack-1x"></i>
+            </span>
+          </a>
+
+          <a href="mailto:matthewlinplusprogramming@gmail.com"
+            class="white-link">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x" style="color: green"></i>
+              <i class="fas fa-envelope fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col l4 s12 hide-on-med-and-down">
+          <br />
+          <br />
+          <p>Copyright © 2019-2020 Matthew Lin</p>
+        </div>
+        <div class="col l4 s12 center-align">
+          <a href="../about" class="white-link">About</a>
+          <br />
+          <a href="../index" class="white-link">Portfolio</a>
+          <br />
+          <a href="../testimonials" class="white-link">Testimonials</a>
+          <br />
+          <a href="../contact" class="white-link">Contact</a>
+        </div>
+        <div class="col l4 s12 hide-on-large-only">
+          <br />
+          <br />
+          <p>Copyright © 2019-2020 Matthew Lin</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/common.js"></script>
+  </body>
+
+</html>
