@@ -1,6 +1,6 @@
 // Header
 const brandTitle = `Matthew Lin`;
-const personalTitle = `Full-Stack Software Developer`;
+const personalTitle = `Full-Stack Software Developer & Youtuber`;
 const personalDescription = `I create high quality web applications, games,
   and software`;
 // Motto section
@@ -45,6 +45,7 @@ new TypeIt('.brand-logo', {
           afterComplete: () => {
             $('#portfolio-button').removeClass('hide');
             $('#resume-button').removeClass('hide');
+            $('#youtube-button').removeClass('hide');
             $('#hero-img').removeClass('hide');
           },
         }).go();
