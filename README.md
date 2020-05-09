@@ -1,2 +1,4 @@
 # Portfolio Website
-My portfolio website made with materialize.css
+## Made with HTML, SCSS, MaterializeCSS, JS/JQuery
+
+Visit at https://matthewlin.net
