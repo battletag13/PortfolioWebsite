@@ -3,4 +3,46 @@
   to = "https://matthewlin.dev/"
   status = 301
   force = true
-  query = {path = ":path"}
+
+[[redirects]]
+  from = "https://matthewlin.net"
+  to = "https://matthewlin.dev/"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/about"
+  to = "https://matthewlin.dev/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://matthewlin.net/about"
+  to = "https://matthewlin.dev/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/testimonials"
+  to = "https://matthewlin.dev/testimonials"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://matthewlin.net/testimonials"
+  to = "https://matthewlin.dev/testimonials"
+  status = 301
+  force = true
+
+  [[redirects]]
+  from = "/contact"
+  to = "https://matthewlin.dev/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://matthewlin.net/contact"
+  to = "https://matthewlin.dev/contact"
+  status = 301
+  force = true
